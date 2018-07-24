@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    h2{background-color:darkslateblue;color: white;text-align:center;font-size: 35px;padding: 20px;}
+    p{text-align:center;font-size:20px;color: gray;}
+    .left{width:50%;float:left;}
+    .right{width:50%; float:right}
+    .tab{margin-left: 180px;margin-right: 180px;}
+    .a {    color:white;background-color:orange;font-weight: bold;font-size: 20px; padding:0px 30px;border-radius: 20px;  }
+    .b{font-family: Arial;font-size:18px;}
+    input[type=text],select,input[type=date],input[type=email],input[type=tel],input[type=number]{width:100%;font-size:18px;background-color:ghostwhite;height: 25px;}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h2 > Hotel Reservation Form</h2>
+
+</head>
+<body>
+<p>An online hotel booking form to track your bookings easily and<br> manage further reservations more accurate</p>
+<div class="left" >
+<form class="tab" >
+    <label class="b">First name*</label><br>
+    <input type ="text" size="60" required>
+    <br><br>
+    <label class="b">E-mail:*</label><br>
+    <input type="email"  size="60" required>
+    <br><br>
+    <label class="b">Country:*<br></label>
+    <input type="text"  size="60"  required>
+    <br><br>
+    <label class="b">Address:<br></label>
+    <input type="text"   size="60" required>
+    <br><br>
+    <label class="b">Address*<br></label>
+    <input type="text"  size="60" required>
+    <br><br>
+    <label class="b">Check-in-Date:*<br></label>
+    <input type="date"   size="60" required>
+    <br><br>
+    <label class="b">Accomodation type*<br></label>
+    <select name="accomodation"   required>
+        <option value="Select">Select</option>
+        <option value="Hotel">Hotel</option>
+        <option value="Motel">Motel</option>
+        <option value="Cottage">Cottage</option>
+        <option value="Lodge">Lodge</option>
+        <option value="Resort">Resort</option>
+    </select>
+    <br><br>
+    <label class="b">Meal Plan*<br></label>
+    <select name="meal"  required>
+        <option value="Select">Select</option>
+        <option value="European Plan">European Plan</option>
+        <option value="Continental Plan">Continental Plan</option>
+        <option value="American Plan">American Plan</option>
+    </select>
+    <br><br>
+    <label class="b">Additional Requests:<br></label>
+    <textarea rows="5" cols="41"></textarea>
+</form>
+</div>
+<div class="right">
+    <form class="tab">
+        <label class="b">Last name*<br></label>
+        <input type ="text" size="50" required>
+        <br><br>
+        <label class="b">Phone Number:*<br></label>
+        <input type="tel"  size="50" required>
+        <br><br>
+        <label class="b">City:*<br></label>
+        <input type="text"  size="50"  required>
+        <br><br>
+        <label class="b">Postal/Zip Code:<br></label>
+        <input type="number"   size="50" required>
+        <br><br>
+        <label class="b">Check-in-Date:*<br></label>
+        <input type="date"   size="50" required>
+        <br><br>
+        <label class="b">Number Of Rooms*<br></label>
+        <input type="text"  size="50" required>
+        <br><br>
+        <label class="b">Room type*<br></label>
+        <select name="roomtype"   required>
+            <option value="Select">Select</option>
+            <option value="Single">Single</option>
+            <option value="Double">Double</option>
+            <option value="Triple">Triple</option>
+            <option value="King">King</option>
+            <option value="Queen">Queen</option>
+        </select><br><br><br>
+        <label class="b">Pick Up From Airport?:</label><br><br>
+        <input type="radio" name="pickup" value="yes">YES
+        <input type="radio" name="pickup" value="no">NO
+        <br><br><br><br>
+        <button type="submit" class="a" value="Submit">Submit</button>
+        <br><br><br>
+</div>
+</body>
+</html>
